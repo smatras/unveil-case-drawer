@@ -85,35 +85,48 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Hero/About Section */}
-      <section className="px-6 py-20 max-w-6xl mx-auto">
-        <div className="text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">Creative</span>
-            <br />
-            <span className="text-slate-900">Portfolio</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            I'm a passionate designer and developer who creates digital experiences that matter. 
-            With a focus on user-centered design and cutting-edge technology, I help brands tell 
-            their stories through beautiful, functional interfaces.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 text-slate-700">
-            <span className="px-4 py-2 bg-white rounded-full shadow-sm font-medium">UI/UX Design</span>
-            <span className="px-4 py-2 bg-white rounded-full shadow-sm font-medium">Web Development</span>
-            <span className="px-4 py-2 bg-white rounded-full shadow-sm font-medium">Brand Identity</span>
-            <span className="px-4 py-2 bg-white rounded-full shadow-sm font-medium">Mobile Apps</span>
+    <div className="min-h-screen bg-white">
+      {/* Hero/About Section - Swiss Grid Layout */}
+      <section className="px-8 py-24 max-w-7xl mx-auto">
+        <div className="swiss-grid">
+          <div className="col-span-12 lg:col-span-8">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium mb-8 swiss-heading">
+              Portfolio
+            </h1>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              <div>
+                <p className="text-lg md:text-xl swiss-text mb-6 leading-relaxed">
+                  Designer and developer creating digital experiences through systematic design thinking and precise execution.
+                </p>
+                <p className="text-base swiss-text leading-relaxed text-muted-foreground">
+                  Focused on user-centered design methodology, technical precision, and functional aesthetics across digital platforms.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="text-sm uppercase tracking-wide font-medium text-muted-foreground">
+                  Services
+                </div>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div>UI/UX Design</div>
+                  <div>Web Development</div>
+                  <div>Brand Identity</div>
+                  <div>Mobile Applications</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="px-6 pb-20 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 text-slate-900">
-          Featured Work
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Case Studies Section - Clean Grid */}
+      <section className="px-8 pb-24 max-w-7xl mx-auto">
+        <div className="mb-16">
+          <h2 className="text-2xl font-medium mb-2 swiss-heading">
+            Selected Work
+          </h2>
+          <div className="w-16 h-px bg-foreground"></div>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {caseStudiesData.map((caseStudy) => (
             <CaseStudyCard
               key={caseStudy.id}
