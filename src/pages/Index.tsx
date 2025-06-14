@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import CaseStudyCard from '@/components/CaseStudyCard';
 import CaseStudyDrawer from '@/components/CaseStudyDrawer';
@@ -90,29 +89,16 @@ const Index = () => {
       <section className="px-8 py-24 max-w-7xl mx-auto">
         <div className="swiss-grid">
           <div className="col-span-12 lg:col-span-8">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium mb-8 swiss-heading">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium mb-8 swiss-heading max-w-[680px]">
               Portfolio
             </h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <p className="text-lg md:text-xl swiss-text mb-6 leading-relaxed">
-                  Designer and developer creating digital experiences through systematic design thinking and precise execution.
-                </p>
-                <p className="text-base swiss-text leading-relaxed text-muted-foreground">
-                  Focused on user-centered design methodology, technical precision, and functional aesthetics across digital platforms.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <div className="text-sm uppercase tracking-wide font-medium text-muted-foreground">
-                  Services
-                </div>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>UI/UX Design</div>
-                  <div>Web Development</div>
-                  <div>Brand Identity</div>
-                  <div>Mobile Applications</div>
-                </div>
-              </div>
+            <div className="mb-16">
+              <p className="text-lg md:text-xl swiss-text mb-6 leading-relaxed max-w-[680px]">
+                Designer and developer creating digital experiences through systematic design thinking and precise execution.
+              </p>
+              <p className="text-base swiss-text leading-relaxed text-muted-foreground max-w-[680px]">
+                Focused on user-centered design methodology, technical precision, and functional aesthetics across digital platforms.
+              </p>
             </div>
           </div>
         </div>
@@ -121,7 +107,7 @@ const Index = () => {
       {/* Case Studies Section - Clean Grid */}
       <section className="px-8 pb-24 max-w-7xl mx-auto">
         <div className="mb-16">
-          <h2 className="text-2xl font-medium mb-2 swiss-heading">
+          <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
             Selected Work
           </h2>
           <div className="w-16 h-px bg-foreground"></div>

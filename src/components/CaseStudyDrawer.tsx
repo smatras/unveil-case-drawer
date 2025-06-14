@@ -48,7 +48,7 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
               <span className="text-xs uppercase tracking-wide font-medium text-muted-foreground">
                 {caseStudy.category}
               </span>
-              <h1 className="text-3xl font-medium swiss-heading max-w-2xl">{caseStudy.title}</h1>
+              <h1 className="text-3xl font-medium swiss-heading max-w-[680px]">{caseStudy.title}</h1>
             </div>
             <button
               onClick={onClose}
@@ -74,16 +74,16 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
             <div className="swiss-grid">
               {/* Overview */}
               <section className="col-span-12 lg:col-span-8 mb-16">
-                <h2 className="text-lg font-medium mb-6 swiss-heading">Overview</h2>
-                <p className="text-base swiss-text leading-relaxed">
+                <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Overview</h2>
+                <p className="text-base swiss-text leading-relaxed max-w-[680px]">
                   {caseStudy.content.overview}
                 </p>
               </section>
 
               {/* Challenge */}
               <section className="col-span-12 lg:col-span-8 mb-16">
-                <h2 className="text-lg font-medium mb-6 swiss-heading">Challenge</h2>
-                <p className="text-base swiss-text leading-relaxed">
+                <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Challenge</h2>
+                <p className="text-base swiss-text leading-relaxed max-w-[680px]">
                   {caseStudy.content.challenge}
                 </p>
               </section>
@@ -107,8 +107,8 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
 
               {/* Solution */}
               <section className="col-span-12 lg:col-span-8 mb-16">
-                <h2 className="text-lg font-medium mb-6 swiss-heading">Solution</h2>
-                <p className="text-base swiss-text leading-relaxed">
+                <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Solution</h2>
+                <p className="text-base swiss-text leading-relaxed max-w-[680px]">
                   {caseStudy.content.solution}
                 </p>
               </section>
@@ -116,7 +116,7 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
               {/* Video */}
               {caseStudy.content.videoId && (
                 <section className="col-span-12 mb-16">
-                  <h2 className="text-lg font-medium mb-6 swiss-heading">Demo</h2>
+                  <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Demo</h2>
                   <div className="aspect-video overflow-hidden bg-muted">
                     <iframe
                       width="100%"
@@ -133,8 +133,8 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
 
               {/* Results */}
               <section className="col-span-12 lg:col-span-8 mb-16">
-                <h2 className="text-lg font-medium mb-6 swiss-heading">Results</h2>
-                <ul className="space-y-3">
+                <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Results</h2>
+                <ul className="space-y-3 max-w-[680px]">
                   {caseStudy.content.results.map((result, index) => (
                     <li key={index} className="flex items-start gap-4">
                       <span className="w-4 h-px bg-foreground mt-3 flex-shrink-0"></span>
@@ -147,7 +147,7 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
               {/* Testimonial */}
               {caseStudy.content.testimonial && (
                 <section className="col-span-12 lg:col-span-8 mb-16">
-                  <blockquote className="border-l-2 border-foreground pl-6">
+                  <blockquote className="border-l-2 border-foreground pl-6 max-w-[680px]">
                     <p className="text-lg italic swiss-text leading-relaxed mb-4">
                       "{caseStudy.content.testimonial}"
                     </p>
