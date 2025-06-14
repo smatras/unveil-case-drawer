@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'grotesk': ['Space Grotesk', 'Arial', 'Helvetica', 'sans-serif'],
-				'sans': ['Space Grotesk', 'Arial', 'Helvetica', 'sans-serif'],
+				'grotesk': ['Work Sans', 'Akzidenz-Grotesk', 'BentonSans', 'Helvetica Neue', 'Arial', 'sans-serif'],
+				'sans': ['Work Sans', 'Akzidenz-Grotesk', 'BentonSans', 'Helvetica Neue', 'Arial', 'sans-serif'],
 			},
 			letterSpacing: {
 				'tight': '-0.02em',
