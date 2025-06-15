@@ -49,14 +49,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Case Studies Section - Clean Grid */}
+      {/* Case Studies Section - Single Column Layout */}
       <section className="px-8 pb-24 max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
             Selected Work
           </h2>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-8 max-w-[780px] mx-auto">
           {caseStudiesData.map((caseStudy) => (
             <CaseStudyCard
               key={caseStudy.id}
