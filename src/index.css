@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 188 188 180;
+    --background: 210 216 216;
     --foreground: 0 0 0;
 
     --card: 255 255 255;
