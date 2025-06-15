@@ -94,7 +94,7 @@
 
   body {
     @apply text-foreground font-grotesk;
-    background-color: #d2d8d8;
+    background-color: #dddddd;
     line-height: 1.4;
     letter-spacing: -0.01em;
   }
