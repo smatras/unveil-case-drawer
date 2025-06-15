@@ -18,7 +18,8 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
 }) => {
   return (
     <Card 
-      className="group cursor-pointer overflow-hidden swiss-card hover:shadow-sm hover:bg-white hover:border-gray-400 transition-all duration-200"
+      className="group cursor-pointer overflow-hidden swiss-card hover:shadow-sm hover:border-gray-400 transition-all duration-200"
+      style={{ backgroundColor: '#dddddd' }}
       onClick={onClick}
     >
       <div className="p-6 flex gap-6 items-start">
