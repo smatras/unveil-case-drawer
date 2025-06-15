@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { ChevronUp } from 'lucide-react';
 
 interface CaseStudyCardProps {
   title: string;
@@ -25,8 +24,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
     >
       <div className="p-6 flex gap-6 items-start">
         <div className="flex-1 min-w-0">
-          <h3 className="text-xl font-medium mb-3 swiss-heading leading-tight max-w-[680px] transition-colors duration-200 flex items-center gap-2">
-            <ChevronUp size={20} className="flex-shrink-0" />
+          <h3 className="text-xl font-medium mb-3 swiss-heading leading-tight max-w-[680px] transition-colors duration-200">
             {title}
           </h3>
           <p className="text-sm swiss-text text-muted-foreground leading-relaxed max-w-[680px]">
