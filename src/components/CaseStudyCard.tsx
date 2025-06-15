@@ -18,12 +18,12 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
 }) => {
   return (
     <Card 
-      className="group cursor-pointer overflow-hidden swiss-card hover:shadow-sm hover:bg-muted/30 transition-all duration-200"
+      className="group cursor-pointer overflow-hidden swiss-card hover:shadow-sm hover:bg-white transition-all duration-200"
       onClick={onClick}
     >
       <div className="p-6 flex gap-6 items-start">
         <div className="flex-1 min-w-0">
-          <h3 className="text-xl font-medium mb-3 swiss-heading leading-tight max-w-[680px] group-hover:text-muted-foreground transition-colors duration-200">
+          <h3 className="text-xl font-medium mb-3 swiss-heading leading-tight max-w-[680px] transition-colors duration-200">
             {title}
           </h3>
           <p className="text-sm swiss-text text-muted-foreground leading-relaxed max-w-[680px]">
