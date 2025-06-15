@@ -53,7 +53,7 @@ const Index = () => {
       <section className="px-8 pb-24 max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
-            Selected Work
+            Case studies
           </h2>
         </div>
         <div className="flex flex-col gap-8 max-w-[780px]">
