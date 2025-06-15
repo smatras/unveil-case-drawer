@@ -56,7 +56,7 @@ const Index = () => {
             Selected Work
           </h2>
         </div>
-        <div className="flex flex-col gap-8 max-w-[780px] mx-auto">
+        <div className="flex flex-col gap-8 max-w-[780px]">
           {caseStudiesData.map((caseStudy) => (
             <CaseStudyCard
               key={caseStudy.id}
