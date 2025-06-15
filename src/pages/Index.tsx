@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import CaseStudyCard from '@/components/CaseStudyCard';
 import CaseStudyDrawer from '@/components/CaseStudyDrawer';
@@ -106,7 +105,7 @@ const Index = () => {
       </section>
 
       {/* Case Studies Section - Clean Grid */}
-      <section className="px-8 pb-24 max-w-7xl mx-auto bg-white">
+      <section className="px-8 pb-24 max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
             Selected Work
