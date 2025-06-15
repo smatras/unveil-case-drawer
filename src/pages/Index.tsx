@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import CaseStudyCard from '@/components/CaseStudyCard';
 import CaseStudyDrawer from '@/components/CaseStudyDrawer';
@@ -110,7 +111,6 @@ const Index = () => {
           <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
             Selected Work
           </h2>
-          <div className="w-16 h-px bg-foreground"></div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {caseStudiesData.map((caseStudy) => (
