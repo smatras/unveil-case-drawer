@@ -44,12 +44,7 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
         {/* Header */}
         <div className="sticky top-0 z-10 bg-white border-b px-8 py-6">
           <div className="flex items-start justify-between max-w-7xl mx-auto">
-            <div className="flex items-start gap-8">
-              <span className="text-xs uppercase tracking-wide font-medium text-muted-foreground">
-                {caseStudy.category}
-              </span>
-              <h1 className="text-3xl font-medium swiss-heading max-w-[680px]">{caseStudy.title}</h1>
-            </div>
+            <h1 className="text-3xl font-medium swiss-heading max-w-[680px]">{caseStudy.title}</h1>
             <button
               onClick={onClose}
               className="p-2 hover:bg-muted transition-colors"
@@ -86,6 +81,19 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
                 <p className="text-base swiss-text leading-relaxed max-w-[680px]">
                   {caseStudy.content.challenge}
                 </p>
+              </section>
+
+              {/* Results */}
+              <section className="col-span-12 lg:col-span-8 mb-16">
+                <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Results</h2>
+                <ul className="space-y-3 max-w-[680px]">
+                  {caseStudy.content.results.map((result, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <span className="w-4 h-px bg-foreground mt-3 flex-shrink-0"></span>
+                      <p className="text-base swiss-text leading-relaxed">{result}</p>
+                    </li>
+                  ))}
+                </ul>
               </section>
 
               {/* Images Grid */}
@@ -130,19 +138,6 @@ const CaseStudyDrawer: React.FC<CaseStudyDrawerProps> = ({
                   </div>
                 </section>
               )}
-
-              {/* Results */}
-              <section className="col-span-12 lg:col-span-8 mb-16">
-                <h2 className="text-lg font-medium mb-6 swiss-heading max-w-[680px]">Results</h2>
-                <ul className="space-y-3 max-w-[680px]">
-                  {caseStudy.content.results.map((result, index) => (
-                    <li key={index} className="flex items-start gap-4">
-                      <span className="w-4 h-px bg-foreground mt-3 flex-shrink-0"></span>
-                      <p className="text-base swiss-text leading-relaxed">{result}</p>
-                    </li>
-                  ))}
-                </ul>
-              </section>
 
               {/* Testimonial */}
               {caseStudy.content.testimonial && (
