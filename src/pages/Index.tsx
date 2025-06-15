@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import CaseStudyCard from '@/components/CaseStudyCard';
 import CaseStudyDrawer from '@/components/CaseStudyDrawer';
@@ -84,7 +85,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero/About Section - Swiss Grid Layout */}
       <section className="px-8 py-24 max-w-7xl mx-auto">
         <div className="swiss-grid">
@@ -105,7 +106,7 @@ const Index = () => {
       </section>
 
       {/* Case Studies Section - Clean Grid */}
-      <section className="px-8 pb-24 max-w-7xl mx-auto">
+      <section className="px-8 pb-24 max-w-7xl mx-auto bg-white">
         <div className="mb-16">
           <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
             Selected Work
