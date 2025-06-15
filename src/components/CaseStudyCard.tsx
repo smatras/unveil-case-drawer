@@ -18,7 +18,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
 }) => {
   return (
     <Card 
-      className="group cursor-pointer overflow-hidden border-transparent hover:border-gray-400 hover:bg-white transition-all duration-300"
+      className="group cursor-pointer overflow-hidden border-transparent hover:border-gray-400 transition-all duration-300"
       style={{ backgroundColor: '#dddddd' }}
       onClick={onClick}
     >
