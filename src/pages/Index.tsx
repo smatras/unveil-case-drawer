@@ -1,6 +1,6 @@
 
-
 import React, { useState } from 'react';
+import { Linkedin } from 'lucide-react';
 import CaseStudyCard from '@/components/CaseStudyCard';
 import CaseStudyDrawer from '@/components/CaseStudyDrawer';
 import { caseStudiesData } from '@/data/caseStudies';
@@ -32,9 +32,18 @@ const Index = () => {
               <p className="text-lg md:text-xl swiss-text mb-6 leading-relaxed max-w-[680px]">
                 Designer and developer creating digital experiences through systematic design thinking and precise execution.
               </p>
-              <p className="text-base swiss-text leading-relaxed text-muted-foreground max-w-[680px]">
+              <p className="text-base swiss-text leading-relaxed text-muted-foreground max-w-[680px] mb-8">
                 Focused on user-centered design methodology, technical precision, and functional aesthetics across digital platforms.
               </p>
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm swiss-text hover:text-foreground transition-colors duration-200"
+              >
+                <Linkedin size={16} />
+                Connect on LinkedIn
+              </a>
             </div>
           </div>
         </div>
@@ -42,7 +51,7 @@ const Index = () => {
 
       {/* Case Studies Section - Clean Grid */}
       <section className="px-8 pb-24 max-w-7xl mx-auto">
-        <div className="mb-16 px-6">
+        <div className="mb-16">
           <h2 className="text-2xl font-medium mb-2 swiss-heading max-w-[680px]">
             Selected Work
           </h2>
@@ -72,4 +81,3 @@ const Index = () => {
 };
 
 export default Index;
-
