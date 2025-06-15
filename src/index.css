@@ -1,128 +1,77 @@
 
+@import '@carbon/styles/css/styles.css';
+@import '@carbon/styles/css/themes/g90/theme.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Swiss Design System - Minimal, functional, grid-based */
-
-@layer base {
-  :root {
-    --background: 210 216 216;
-    --foreground: 42 42 42;
-
-    --card: 255 255 255;
-    --card-foreground: 42 42 42;
-
-    --popover: 255 255 255;
-    --popover-foreground: 42 42 42;
-
-    --primary: 42 42 42;
-    --primary-foreground: 255 255 255;
-
-    --secondary: 245 245 245;
-    --secondary-foreground: 42 42 42;
-
-    --muted: 245 245 245;
-    --muted-foreground: 42 42 42;
-
-    --accent: 245 245 245;
-    --accent-foreground: 42 42 42;
-
-    --destructive: 220 20 20;
-    --destructive-foreground: 255 255 255;
-
-    --border: 229 229 229;
-    --input: 229 229 229;
-    --ring: 42 42 42;
-
-    --radius: 2px;
-
-    --sidebar-background: 255 255 255;
-    --sidebar-foreground: 42 42 42;
-    --sidebar-primary: 42 42 42;
-    --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 245 245 245;
-    --sidebar-accent-foreground: 42 42 42;
-    --sidebar-border: 229 229 229;
-    --sidebar-ring: 42 42 42;
-  }
-
-  .dark {
-    --background: 0 0 0;
-    --foreground: 255 255 255;
-
-    --card: 38 38 38;
-    --card-foreground: 255 255 255;
-
-    --popover: 38 38 38;
-    --popover-foreground: 255 255 255;
-
-    --primary: 255 255 255;
-    --primary-foreground: 0 0 0;
-
-    --secondary: 38 38 38;
-    --secondary-foreground: 255 255 255;
-
-    --muted: 38 38 38;
-    --muted-foreground: 163 163 163;
-
-    --accent: 38 38 38;
-    --accent-foreground: 255 255 255;
-
-    --destructive: 239 68 68;
-    --destructive-foreground: 255 255 255;
-
-    --border: 38 38 38;
-    --input: 38 38 38;
-    --ring: 255 255 255;
-
-    --sidebar-background: 38 38 38;
-    --sidebar-foreground: 255 255 255;
-    --sidebar-primary: 255 255 255;
-    --sidebar-primary-foreground: 0 0 0;
-    --sidebar-accent: 38 38 38;
-    --sidebar-accent-foreground: 255 255 255;
-    --sidebar-border: 38 38 38;
-    --sidebar-ring: 255 255 255;
-  }
+/* Carbon Dark Theme Override */
+:root {
+  --cds-background: #161616;
+  --cds-layer-01: #262626;
+  --cds-layer-02: #393939;
+  --cds-layer-03: #525252;
+  --cds-field-01: #262626;
+  --cds-field-02: #393939;
+  --cds-text-primary: #f4f4f4;
+  --cds-text-secondary: #c6c6c6;
+  --cds-text-helper: #8d8d8d;
+  --cds-link-primary: #78a9ff;
+  --cds-support-error: #fa4d56;
+  --cds-support-success: #42be65;
+  --cds-support-warning: #f1c21b;
+  --cds-support-info: #4589ff;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply text-foreground font-grotesk;
-    background-color: #dddddd;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-medium;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
+body {
+  @apply font-sans;
+  background-color: var(--cds-background);
+  color: var(--cds-text-primary);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
-@layer utilities {
-  .swiss-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-  }
-  
-  .swiss-text {
-    @apply text-foreground leading-tight tracking-tight;
-  }
+/* Carbon Grid System */
+.cds--grid {
+  max-width: 1584px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-  .swiss-heading {
-    @apply font-medium text-foreground leading-none tracking-tight;
-  }
+.cds--row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
 
-  .swiss-card {
-    @apply bg-white border border-border;
-    box-shadow: none;
-  }
+.cds--col {
+  flex: 0 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Custom styles for portfolio */
+.portfolio-heading {
+  font-weight: 400;
+  color: var(--cds-text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.portfolio-text {
+  color: var(--cds-text-secondary);
+  line-height: 1.5;
+}
+
+.portfolio-card {
+  background-color: var(--cds-layer-01);
+  border: 1px solid var(--cds-layer-02);
+  transition: all 0.2s ease;
+}
+
+.portfolio-card:hover {
+  background-color: var(--cds-layer-02);
+  border-color: var(--cds-layer-03);
 }
